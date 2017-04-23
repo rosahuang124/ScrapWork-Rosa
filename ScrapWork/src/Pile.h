@@ -1,33 +1,43 @@
-#include "cinder/app/App.h"
-#include "cinder/app/RendererGl.h"
-#include "cinder/gl/gl.h"
+#include "poNodeContainer.h"
+#include "poShape.h"
+#include "poImage.h"
 
 using namespace ci;
 using namespace ci::app;
 using namespace std;
 
-class Pile{
+class Pile;
+typedef std::shared_ptr<Pile> PileRef;
+
+class Pile
+:public po::scene::NodeContainer
+{
 public:
-    Pile();
-    void setup();
+    static PileRef  create();
     void update();
-    void draw();
-    void mousedown( MouseEvent event );
-    void swirl();
-    
     
 private:
-    ci::Surface8u   bgSurface;
-    ci::Surface8u   pileWaitSurface;
-    ci::Surface8u   pileActive1Surface;
-    ci::Surface8u   pileActive2Surface;
-    ci::Surface8u   pileActive3Surface;
+    Pile();
+    void setup();
+    void mousedown( po::scene::MouseEvent &event );
+    void pileAnimation();
+    
+   
+    
+    gl::TextureRef          pileWaitTexture;
+    gl::TextureRef          pileActive1Texture;
+    gl::TextureRef          pileActive2Texture;
+    gl::TextureRef          pileActive3Texture;
+    gl::TextureRef          introTexture;
+    
+    po::scene::ImageRef     pileWaitImage;
+    po::scene::ImageRef     pileActive1Image;
+    po::scene::ImageRef     pileActive2Image;
+    po::scene::ImageRef     pileActive3Image;
+    po::scene::ImageRef     introImage;
 
-    gl::TextureRef  bgTexture;
-    gl::TextureRef  pileWaitTexture;
-    gl::TextureRef  pileActive1Texture;
-    gl::TextureRef  pileActive2Texture;
-    gl::TextureRef  pileActive3Texture;
+
+
 };
 
 
