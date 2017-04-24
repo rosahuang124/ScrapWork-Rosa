@@ -6,7 +6,8 @@
 #include "poShape.h"
 #include "poNodeContainer.h"
 #include "Pile.h"
-#include "activePageButton.h"
+#include "buttonMenu.h"
+
 
 using namespace ci;
 using namespace ci::app;
@@ -21,7 +22,7 @@ class ScrapWorkApp : public App {
     
     
     PileRef                         mPile ;
-    activePageButtonRef             mActivePageBtn;
+    buttonMenuRef                   buttonMenu;
     
     po::scene::SceneRef             mScene;
     po::scene::NodeContainerRef     mContainer;
@@ -54,8 +55,8 @@ void ScrapWorkApp::setup()
     
     
     activeContainer->addChild(bgImg);
-    mActivePageBtn = activePageButton::create();
-    activeContainer->addChild(mActivePageBtn);
+    buttonMenu = buttonMenu::create();
+    activeContainer->addChild(buttonMenu);
     //activeContainer->setAlpha(0.f);
     
 }
@@ -68,7 +69,7 @@ void ScrapWorkApp::mouseDown( MouseEvent event )
 void ScrapWorkApp::update()
 {
     mScene->update() ;
-    //mPile->update();
+    
     
 }
 

@@ -1,6 +1,9 @@
+#pragma once
+
 #include "poNodeContainer.h"
 #include "poShape.h"
 #include "poImage.h"
+
 
 using namespace ci;
 using namespace ci::app;
