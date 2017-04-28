@@ -11,15 +11,17 @@ using namespace std;
 class popBox;
 typedef  std::shared_ptr<popBox> popBoxRef;
 
+
+
 class popBox
 :public po::scene::NodeContainer
 {
 public:
     
     static popBoxRef  create(gl::TextureRef popBoxImg);
+
     void setup(gl::TextureRef popBox);
-    void updatePopBox();
-    
+    void setToNormal();
     
 private:
     
@@ -28,4 +30,3 @@ private:
 
     
 };
-

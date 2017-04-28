@@ -49,14 +49,14 @@ void ScrapWorkApp::setup()
     
     bgImg = po::scene::Image::create(ci::gl::Texture::create(ci::loadImage(loadAsset("bg.png"))));
 
-    waitContainer->addChild(bgImg);
-    mPile = Pile::create();
-    waitContainer->addChild(mPile);
+//    waitContainer->addChild(bgImg);
+//    mPile = Pile::create();
+//    waitContainer->addChild(mPile);
     
     
-//    activeContainer->addChild(bgImg);
-//    buttonMenu = buttonMenu::create();
-//    activeContainer->addChild(buttonMenu);
+    activeContainer->addChild(bgImg);
+    buttonMenu = buttonMenu::create();
+    activeContainer->addChild(buttonMenu);
     //activeContainer->setAlpha(0.f);
     
 }
