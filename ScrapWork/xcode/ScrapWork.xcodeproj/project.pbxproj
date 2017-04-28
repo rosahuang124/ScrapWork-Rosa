@@ -25,7 +25,8 @@
 		7CA9A599A8F445E290C3BFE6 /* poNodeContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87C5101254E8455CB563BB49 /* poNodeContainer.cpp */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		981ABEB01EAD662B00291D37 /* buttonMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 981ABEAE1EAD662B00291D37 /* buttonMenu.cpp */; };
-		981ABEB31EAD665600291D37 /* Button.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 981ABEB11EAD665600291D37 /* Button.cpp */; };
+		981ABEB31EAD665600291D37 /* Buttons.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 981ABEB11EAD665600291D37 /* Buttons.cpp */; };
+		98CE19CD1EB06828003223DE /* popBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98CE19CB1EB06828003223DE /* popBox.cpp */; };
 		98F3D0241EAA9F1F0001048F /* Pile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98F3D0221EAA9F1F0001048F /* Pile.cpp */; };
 		9D1CE81BA330459F80181AF1 /* poNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A48C719F70A74561A8714FC5 /* poNode.cpp */; };
 		AF420A0D27D542728CD67502 /* poShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B6502D8C374445880D513FF /* poShape.cpp */; };
@@ -67,8 +68,10 @@
 		97D09A76868747629930791D /* poTextureFit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = poTextureFit.h; path = ../blocks/poScene/src/poScene/poTextureFit.h; sourceTree = "<group>"; };
 		981ABEAE1EAD662B00291D37 /* buttonMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = buttonMenu.cpp; path = ../src/buttonMenu.cpp; sourceTree = "<group>"; };
 		981ABEAF1EAD662B00291D37 /* buttonMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = buttonMenu.h; path = ../src/buttonMenu.h; sourceTree = "<group>"; };
-		981ABEB11EAD665600291D37 /* Button.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Button.cpp; path = ../src/Button.cpp; sourceTree = "<group>"; };
-		981ABEB21EAD665600291D37 /* Button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Button.h; path = ../src/Button.h; sourceTree = "<group>"; };
+		981ABEB11EAD665600291D37 /* Buttons.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Buttons.cpp; path = ../src/Buttons.cpp; sourceTree = "<group>"; };
+		981ABEB21EAD665600291D37 /* Buttons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Buttons.h; path = ../src/Buttons.h; sourceTree = "<group>"; };
+		98CE19CB1EB06828003223DE /* popBox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = popBox.cpp; path = ../src/popBox.cpp; sourceTree = "<group>"; };
+		98CE19CC1EB06828003223DE /* popBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = popBox.h; path = ../src/popBox.h; sourceTree = "<group>"; };
 		98F3D0221EAA9F1F0001048F /* Pile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Pile.cpp; path = ../src/Pile.cpp; sourceTree = "<group>"; };
 		98F3D0231EAA9F1F0001048F /* Pile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Pile.h; path = ../src/Pile.h; sourceTree = "<group>"; };
 		9F3C0DC6AD354037BC28BBA3 /* poEventCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = poEventCenter.h; path = ../blocks/poScene/src/poScene/poEventCenter.h; sourceTree = "<group>"; };
@@ -120,8 +123,10 @@
 				98F3D0231EAA9F1F0001048F /* Pile.h */,
 				981ABEAE1EAD662B00291D37 /* buttonMenu.cpp */,
 				981ABEAF1EAD662B00291D37 /* buttonMenu.h */,
-				981ABEB11EAD665600291D37 /* Button.cpp */,
-				981ABEB21EAD665600291D37 /* Button.h */,
+				98CE19CB1EB06828003223DE /* popBox.cpp */,
+				98CE19CC1EB06828003223DE /* popBox.h */,
+				981ABEB11EAD665600291D37 /* Buttons.cpp */,
+				981ABEB21EAD665600291D37 /* Buttons.h */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -317,9 +322,10 @@
 				981ABEB01EAD662B00291D37 /* buttonMenu.cpp in Sources */,
 				7CA9A599A8F445E290C3BFE6 /* poNodeContainer.cpp in Sources */,
 				36604132D6654B2C9BC9E476 /* poScene.cpp in Sources */,
-				981ABEB31EAD665600291D37 /* Button.cpp in Sources */,
+				981ABEB31EAD665600291D37 /* Buttons.cpp in Sources */,
 				AF420A0D27D542728CD67502 /* poShape.cpp in Sources */,
 				45914938B26F4C1B93CCCF8F /* poTextBox.cpp in Sources */,
+				98CE19CD1EB06828003223DE /* popBox.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

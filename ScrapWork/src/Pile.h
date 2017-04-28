@@ -38,8 +38,7 @@ private:
     po::scene::ImageRef     pileActive2Image;
     po::scene::ImageRef     pileActive3Image;
     po::scene::ImageRef     introImage;
-
-
+    
 
 };
 

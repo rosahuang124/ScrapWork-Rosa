@@ -1,7 +1,8 @@
 #pragma once
 
 #include "poNodeContainer.h"
-#include "Button.h"
+#include "Buttons.h"
+#include "popBox.h"
 
 class buttonMenu;
 typedef std::shared_ptr<buttonMenu> buttonMenuRef;
@@ -17,10 +18,10 @@ public:
 
     
 private:
-    ButtonRef btn1;
-    ButtonRef btn2;
-    ButtonRef btn3;
-    ButtonRef btn4;
+    ButtonsRef btn1;
+    ButtonsRef btn2;
+    ButtonsRef btn3;
+    ButtonsRef btn4;
     
     gl::TextureRef btn1Texture;
     gl::TextureRef btn2Texture;
@@ -31,5 +32,15 @@ private:
     gl::TextureRef btn2ActiveTexture;
     gl::TextureRef btn3ActiveTexture;
     gl::TextureRef btn4ActiveTexture;
+    
+    popBoxRef popBox1;
+    popBoxRef popBox2;
+    popBoxRef popBox3;
+    popBoxRef popBox4;
+    
+    gl::TextureRef popBox1Texture;
+    gl::TextureRef popBox2Texture;
+    gl::TextureRef popBox3Texture;
+    gl::TextureRef popBox4Texture;
     
 };

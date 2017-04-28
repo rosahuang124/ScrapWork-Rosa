@@ -7,16 +7,16 @@ using namespace ci;
 using namespace ci::app;
 using namespace std;
 
-class Button;
-typedef  std::shared_ptr<Button> ButtonRef;
+class Buttons;
+typedef  std::shared_ptr<Buttons> ButtonsRef;
 typedef  ci::signals::Signal<void(int number)> btnChangeState;
 
-class Button
+class Buttons
 :public po::scene::NodeContainer
 {
 public:
     
-    static ButtonRef  create(gl::TextureRef btnImg, gl::TextureRef btnActiveImg);
+    static ButtonsRef  create(gl::TextureRef btnImg, gl::TextureRef btnActiveImg);
     btnChangeState& getbtnChangeStateSignal(){return btnStateChangeSignal;}
     
     void setup(gl::TextureRef btnImg, gl::TextureRef btnActiveImg);
@@ -36,8 +36,5 @@ private:
     gl::TextureRef mButtonActiveTexture;
     
     int             mID;
-
-    
-
 };
 
